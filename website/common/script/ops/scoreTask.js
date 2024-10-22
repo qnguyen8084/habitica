@@ -57,7 +57,7 @@ function _calculateDelta (task, direction, cron) {
 
 // Approximates the reverse delta for the task value
 // This is meant to return the task value to its original value when unchecking a task.
-// First, calculate the value using the normal way for our first guess although
+// First, calculate the value using the normal way for our first guess, although
 // it will be a bit off
 function _calculateReverseDelta (task, direction) {
   const currVal = _getTaskValue(task.value);

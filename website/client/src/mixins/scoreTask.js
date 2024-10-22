@@ -1,6 +1,6 @@
 import Vue from 'vue';
 
-import scoreTask from '@/../../common/script/ops/scoreTask';
+import scoreTask from '../../../common/script/ops/scoreTask';
 import notifications from './notifications';
 import { mapState } from '@/libs/store';
 import * as Analytics from '@/libs/analytics';

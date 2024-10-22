@@ -1,4 +1,4 @@
-import addTask from '../../../website/common/script/ops/addTask';
+import addTask from '../../../website/common/script/ops/taskOperations/addTask';
 import {
   generateUser,
 } from '../../helpers/common.helper';

@@ -6,14 +6,14 @@ import rebirth from './rebirth';
 import allocate from './stats/allocate';
 import allocateBulk from './stats/allocateBulk';
 import allocateNow from './stats/allocateNow';
-import sortTask from './sortTask';
+import sortTask from './taskOperations/sortTask';
 import updateTask from './updateTask';
-import deleteTask from './deleteTask';
-import addTask from './addTask';
-import addTag from './addTag';
-import sortTag from './sortTag';
-import updateTag from './updateTag';
-import deleteTag from './deleteTag';
+import deleteTask from './taskOperations/deleteTask';
+import addTask from './taskOperations/addTask';
+import addTag from './tagOperations/addTag';
+import sortTag from './tagOperations/sortTag';
+import updateTag from './tagOperations/updateTag';
+import deleteTag from './tagOperations/deleteTag';
 import blockUser from './blockUser';
 import feed from './feed';
 import releasePets from './releasePets';
@@ -32,6 +32,12 @@ import scoreTask from './scoreTask';
 import markPmsRead from './markPMSRead';
 import * as pinnedGearUtils from './pinnedGearUtils';
 import { unEquipByType } from './unequip';
+import Commandd from './Commandd';
+import AddTagCommand from './tagOperations/AddTagCommand';
+import UpdateTagCommand from './tagOperations/UpdateTagCommand';
+import DeleteTagCommand from './tagOperations/DeleteTagCommand';
+import SortTagCommand from './tagOperations/SortTagCommand';
+import CommandInvoker from './CommandInvoker';
 
 export default {
   sleep,
@@ -68,4 +74,10 @@ export default {
   markPmsRead,
   pinnedGearUtils,
   unEquipByType,
+  Commandd,
+  AddTagCommand,
+  UpdateTagCommand,
+  DeleteTagCommand,
+  SortTagCommand,
+  CommandInvoker,
 };
